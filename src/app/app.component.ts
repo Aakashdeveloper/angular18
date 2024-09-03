@@ -1,18 +1,35 @@
-import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Component,OnInit } from '@angular/core';
 import { HeaderComponent } from './header/header.component';
+import { FormsModule} from '@angular/forms'
 
 @Component({
-  selector: 'app-root',
-  standalone: true,
-  imports: [
-    RouterOutlet,
-    HeaderComponent
+  selector:'app-root',
+  standalone:true,
+  imports:[
+    HeaderComponent,
+    FormsModule
   ],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  templateUrl:'./app.component.html',
+  styleUrl:'./app.component.css'
 })
 
-export class AppComponent {
-  title = 'angular18';
+export class AppComponent implements OnInit{
+  title='Edureka'
+  imgUrl="https://b.zmtcdn.com/data/pictures/4/307374/b2b03be3aba61b0f173aa23e1abdb42b.jpg"
+  name=''
+
+  constructor(){
+    console.log("Constructor called")
+  }
+
+  ngOnInit():void{
+    console.log('NgOninit called')
+
+    this.title="Change Title"
+  }
+
+  changeMessage(){
+    this.title="Change After Click"
+  }
+
 }

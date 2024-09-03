@@ -1,4 +1,16 @@
 <app-header></app-header>
+<hr/>
+<h1>
+  {{title}}
+</h1>
 <h1>
   Angular App
 </h1>
+<img [src]='imgUrl' class="imgClass"/>
+
+<button (click)="changeMessage()">Click Me</button>
+<hr/>
+<div>
+  <input placeholder="Type Your Name" [(ngModel)]="name"/>
+  <p>Your Name is: {{name}}</p>
+</div>

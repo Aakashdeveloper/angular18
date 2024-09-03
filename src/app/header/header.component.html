@@ -1,1 +1,28 @@
-<p>header works!</p>
+<p>
+    {{heading}}{{4*2}}
+</p>
+
+@if (isVisible) {
+    <div>
+      You are admin
+    </div>
+  }
+@else if(isVisible2){
+    <div>
+        You are user
+      </div>
+}
+@else{
+    <div>
+        No Access
+      </div>
+}
+
+@switch (color) {
+    @case ("red") {
+        <div>Red</div>
+    }
+    @case ("blue") {
+        <div>Blue</div>
+    }
+}

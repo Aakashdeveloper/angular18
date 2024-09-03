@@ -8,5 +8,8 @@ import { Component } from '@angular/core';
   styleUrl: './header.component.css'
 })
 export class HeaderComponent {
-
+  heading="Angular 1"
+  isVisible = true
+  isVisible2 = true
+  color='blue'
 }
