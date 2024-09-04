@@ -1,0 +1,28 @@
+<div class="home">
+
+<div class="buttons">
+    @if(SuperAdmin){
+        <button>Super Admin</button> &nbsp;
+        <button>Admin</button>
+    }
+    @else if(Admin){
+        <button>Admin</button>
+    }
+    @else{
+        <h2>No Access</h2>
+    }
+   
+</div>
+<div>
+    @switch(color){
+        @case('red'){
+            <h2>This is red</h2>
+        }
+        @case('Skyblue'){
+            <h2>This is skyblue</h2>
+        }
+    }
+</div>
+
+<app-child [items]="itemList" (selectedItemEvent)="OnItemSelected($event)"></app-child>
+<p>Selected Item:{{selectedItem}}</p>

@@ -1,28 +1,17 @@
-<p>
-    {{heading}}{{4*2}}
-</p>
-
-@if (isVisible) {
-    <div>
-      You are admin
+<header>
+    <div id="brand">
+        {{heading}}{{4*2}}
     </div>
-  }
-@else if(isVisible2){
-    <div>
-        You are user
-      </div>
-}
-@else{
-    <div>
-        No Access
-      </div>
-}
-
-@switch (color) {
-    @case ("red") {
-        <div>Red</div>
-    }
-    @case ("blue") {
-        <div>Blue</div>
-    }
-}
+    <div class="social">
+        <a>
+            <img src="https://i.ibb.co/bsXv4bf/facebook.png" alt="fblogo" class="socialIcon"/>
+        </a>
+        <a href="">
+            <img src="https://i.ibb.co/8c9LJP1/insta.png" alt="fblogo" class="socialIcon"/>
+        </a>
+        <a href="">
+            <img src="https://i.ibb.co/w07K2Vn/youtube1.png" alt="fblogo" class="socialIcon"/>
+        </a>
+    </div>
+    
+</header>
