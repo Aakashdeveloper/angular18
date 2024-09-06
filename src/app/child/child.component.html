@@ -1,7 +1,6 @@
 <p>child works!</p>
 <ul>
     @for(item of items; track item){
-        <li (click)="selecteItem(item)">{{item}}</li>
+        <li (click)="selecteItem(item.name)">{{item.name}}</li>
     }
 </ul>
-<p>{{items}}</p>

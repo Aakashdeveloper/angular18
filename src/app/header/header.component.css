@@ -16,3 +16,8 @@ header{
 .social{
     float: right;
 }
+
+.nav{
+    float: left;
+    color: white;
+}

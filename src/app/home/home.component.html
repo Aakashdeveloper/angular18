@@ -26,3 +26,5 @@
 
 <app-child [items]="itemList" (selectedItemEvent)="OnItemSelected($event)"></app-child>
 <p>Selected Item:{{selectedItem}}</p>
+
+<button (click)="addNewItem()">Add Item</button>

@@ -1,9 +1,14 @@
 import { Component,OnInit } from '@angular/core';
 import { FormsModule} from '@angular/forms';
+import { CommonModule } from '@angular/common';
+import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
+
 
 import { HeaderComponent } from './header/header.component';
 import {FooterComponent } from './footer/footer.component';
 import {HomeComponent} from './home/home.component';
+
+
 
 @Component({
   selector:'app-root',
@@ -12,7 +17,9 @@ import {HomeComponent} from './home/home.component';
     HeaderComponent,
     FooterComponent,
     HomeComponent,
-    FormsModule
+    FormsModule,
+    CommonModule,
+    RouterOutlet, RouterLink, RouterLinkActive 
   ],
   templateUrl:'./app.component.html',
   styleUrl:'./app.component.css'

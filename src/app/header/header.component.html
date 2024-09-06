@@ -1,7 +1,17 @@
 <header>
     <div id="brand">
-        {{heading}}{{4*2}}
+        {{heading | myupper:'Upper' }}{{4*2}}
+       
     </div>
+    <div class="nav">
+            <a routerLink="/"
+                routerLinkActive="active">Home</a>
+              <a routerLink="/about"
+                routerLinkActive="active">About</a>
+                <a routerLink="/contact"
+                routerLinkActive="active">Contact</a>
+    </div>
+    
     <div class="social">
         <a>
             <img src="https://i.ibb.co/bsXv4bf/facebook.png" alt="fblogo" class="socialIcon"/>
