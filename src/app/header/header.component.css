@@ -17,7 +17,16 @@ header{
     float: right;
 }
 
-.nav{
+.navbar{
+    overflow: hidden;
+    width:50%
+}
+
+.navbar a{
     float: left;
-    color: white;
+    display: block;
+    color:white;
+    text-decoration: none;
+    padding: 14px 20px;
+    text-align: center;
 }

@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { UpperCasePipe,CurrencyPipe} from '@angular/common';
 import { MyupperPipe } from '../myupper.pipe';
-import { RouterLink, RouterLinkActive } from '@angular/router';
+import { RouterLink, RouterLinkActive} from '@angular/router';
 
 
 @Component({

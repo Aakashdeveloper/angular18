@@ -3,7 +3,7 @@
 <div class="buttons">
     @if(SuperAdmin){
         <button>Super Admin</button> &nbsp;
-        <button>Admin</button>
+        <button (click)="gotoCourse()">Course</button>
     }
     @else if(Admin){
         <button>Admin</button>
@@ -28,3 +28,5 @@
 <p>Selected Item:{{selectedItem}}</p>
 
 <button (click)="addNewItem()">Add Item</button>
+
+<p appMyDirective>My Directive code Show</p>

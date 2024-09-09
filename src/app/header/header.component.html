@@ -1,16 +1,18 @@
 <header>
     <div id="brand">
         {{heading | myupper:'Upper' }}{{4*2}}
-       
     </div>
-    <div class="nav">
-            <a routerLink="/"
-                routerLinkActive="active">Home</a>
-              <a routerLink="/about"
-                routerLinkActive="active">About</a>
-                <a routerLink="/contact"
-                routerLinkActive="active">Contact</a>
-    </div>
+    <nav class="navbar">
+        <a routerLink=""
+        routerLinkActive="active"
+        [routerLinkActiveOptions]="{exact:true}">Home</a>
+        <a routerLink="/about"
+        routerLinkActive="active">About </a>
+        <a routerLink="/contact"
+        routerLinkActive="active">Contact</a>
+        <a routerLink="/blog"
+        routerLinkActive="active">Blog</a>
+    </nav>
     
     <div class="social">
         <a>
